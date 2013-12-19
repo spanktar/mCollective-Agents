@@ -30,7 +30,7 @@ module MCollective
             def distupgrade_action
                 reply.data = %x[/usr/bin/apt-get dist-upgrade -y > /dev/null 2>&1 && echo OK || echo FAILED].chomp
             end
-            def securityupdate_action
+            def securityupgrade_action
                 reply.data = %x[grep security /etc/apt/sources.list > /tmp/security.list; /usr/bin/apt-get upgrade -oDir::Etc::Sourcelist=/tmp/security.list -s > /dev/null 2>&1 && echo OK || echo FAILED].chomp
             end
             def unattended_action
