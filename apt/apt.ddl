@@ -54,12 +54,12 @@ action "distupgrade", :description => "Perform System Dist-Upgrade" do
           :display_as  => "Update Execution"
 end
 
-action "securityupdate", :description => "Perform Security Updates Only" do
+action "securityupgrade", :description => "Perform Security Upgrades Only" do
     display :always
 
     output "status",
           :description => "Status of security upgrade exection",
-          :display_as  => "Security Update Execution"
+          :display_as  => "Security Upgrade Execution"
 end
 
 action "unattended", :description => "Perform Unattended Upgrades" do
