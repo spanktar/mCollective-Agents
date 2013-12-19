@@ -5,5 +5,7 @@
 ## Agents Available ##
 ### APT ###
 **Description:** Various APT related commands to assist in managing a Debian or Ubuntu environment
+**Note:** In order to use the "unattended" option, you'll need to install the "unattended-upgrades" package.
+
 ### Spam Assassin ###
 **Description:** Various Spam Assassin related commands
