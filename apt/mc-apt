@@ -14,6 +14,8 @@ options = rpcoptions do |parser, options|
     parser.separator "  update          - perform system update (i.e. apt-get update)"
     parser.separator "  upgrade         - perform system upgrade (i.e. apt-get upgrade)"
     parser.separator "  distupgrade     - perform system dist-upgrade (i.e. apt-get dist-upgrade)"
+    parser.separator "  securityupgrade - perform security upgrades"
+    parser.separator "  unattended      - perform unattended upgrade (i.e. unattended-upgrades)"
 end
 
 if ARGV.length == 1
